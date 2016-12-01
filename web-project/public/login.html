@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="public/pure-release-0.6.0/pure-min.css" />
+        <title>Comics</title>
+        <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <script src="https://unpkg.com/jquery@3.1.0/dist/jquery.min.js"></script>
+        <script src="https://unpkg.com/remarkable@1.7.1/dist/remarkable.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="content"></div>
+        <script type="text/babel" src="public/src/standardComponents.js"></script>
+        <script type="text/babel">
+            ReactDOM.render(
+                <LoginPage/>,
+                document.getElementById("content")
+            );
+        </script>
+    </body>
+    <style>
+        .pure-g > div {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .l-box{
+            padding: 1em;
+        }
+
+        .legendControl{
+            padding-left: 1em;
+        }
+
+        #content{ 
+            width: 900px; 
+            margin: 0 auto; 
+        }
+
+        .btnMargin{
+            margin-left: 1em;
+        }
+    </style>
+</html>
